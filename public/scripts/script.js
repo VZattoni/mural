@@ -31,4 +31,19 @@ function updatePosts(){
 
 function newPost(){
     
+    let title = document.getElementById('title').value;
+    let description = document.getElementById('desc').value;
+
+    let post = {title, description}
+
+    let url = 'http://localhost:3000/api/new'
+    const options = {
+        method: "POST",
+        headers: new Headers({'content-type': 'application/json' }),
+        body: JSON.stringify(post)}
+
+    fetch(url, options).then(res => {
+        console.log(res.status)
+    })
+
 }
