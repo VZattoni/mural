@@ -1,7 +1,64 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+
+@media screen and (max-width: 500px){
+    body{
+        font-family: 'Open Sans', sans-serif;
+        /* height: 100%; */
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: #FFDEE9;
+        background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    }
+
+    .title-div{
+        text-align: center;
+        width: 100px;
+    }
+
+
+    .container{
+        margin: 1rem;
+    }
+    
+    .new-post-container{
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, .5);
+        border: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fields-container{
+        /* text-align: center; */
+        display: flex;
+        
+    }
+
+    .fields{
+        width: 200px;
+        /* display: flex; */
+        text-align: center;
+    }
+
+    #add-button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #b2dd81;
+        color: black;
+        border: 0px;
+    }
+
+    .div-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+
+    }
+
+}
 
 
 body{
