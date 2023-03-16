@@ -16,6 +16,9 @@ module.exports = {
             title,
             description
         })
+        console.log('A new post has been posted!')
+
+        console.log(title, description)
     }
 }
 

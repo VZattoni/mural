@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function updatePosts(){
 
-    let url = 'http://localhost:3000/api/all'
+    let url = 'http://192.168.15.29:3000/api/all'
 
     fetch(url).then((res)=>{
         return res.json();
@@ -36,7 +36,7 @@ function newPost(){
 
     let post = {title, description}
 
-    let url = 'http://localhost:3000/api/new'
+    let url = 'http://192.168.15.29:3000/api/new'
     const options = {
         method: "POST",
         headers: new Headers({'content-type': 'application/json' }),
@@ -45,5 +45,8 @@ function newPost(){
     fetch(url, options).then(res => {
         console.log(res.status)
     })
+
+    document.getElementById('form').reset()
+
 
 }
